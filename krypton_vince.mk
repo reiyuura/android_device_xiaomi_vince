@@ -37,6 +37,9 @@ $(call inherit-product, vendor/krypton/config/common_full_phone.mk)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/aosp_excluded_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/aosp_excluded_hardware.xml
 
+# Krypton Apps
+TARGET_BUILD_VIA_BROWSER := false
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
 PRODUCT_NAME := krypton_vince
