@@ -39,7 +39,6 @@ ro.charger.enable_suspend=true
 # Data
 ro.vendor.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
-persist.vendor.data.mode=concurrent
 
 # Display
 debug.hwui.renderer=skiagl
