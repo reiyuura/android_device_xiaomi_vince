@@ -23,7 +23,9 @@ TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_SUFFIX := _64
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+   $(LOCAL_PATH)/overlay \
+   $(LOCAL_PATH)/overlay-krypton
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -212,8 +214,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor
 
 # Dex preopt
-ifeq ($(WITH_GAPPS),true)
-PRODUCT_DEXPREOPT_SPEED_APPS += NexusLauncherRelease
+ifeq ($(strip $(TARGET_BUILD_LAWNCHAIR)),true)
+PRODUCT_DEXPREOPT_SPEED_APPS += Lawnchair
 else
 PRODUCT_DEXPREOPT_SPEED_APPS += Launcher3QuickStep
 endif

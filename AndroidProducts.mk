@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_vince.mk
+    $(LOCAL_DIR)/krypton_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_vince-user \
-    octavi_vince-userdebug \
-    octavi_vince-eng
+    krypton_vince-user \
+    krypton_vince-userdebug \
+    krypton_vince-eng

@@ -60,6 +60,8 @@ TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CONFIG := vince-perf_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-cosmic
+TARGET_KERNEL_CROSS_COMPILE_ARM32_PREFIX := arm-linux-gnueabi-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 TARGET_KERNEL_ADDITIONAL_FLAGS := AR=llvm-ar AS=llvm-as NM=llvm-nm LD=ld.lld OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump OBJSIZE=llvm-size READELF=llvm-readelf STRIP=llvm-strip HOSTAR=llvm-ar HOSTAS=llvm-as HOSTNM=llvm-nm HOSTLD=ld.lld HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # ANT
@@ -103,7 +105,6 @@ TARGET_HW_DISK_ENCRYPTION := true
 # Display
 USE_DEVICE_SPECIFIC_DISPLAY := true
 DEVICE_SPECIFIC_DISPLAY_PATH := $(DEVICE_PATH)/qcom-caf/display
-TARGET_DISABLE_POSTRENDER_CLEANUP := true
 TARGET_SCREEN_DENSITY := 392
 TARGET_USES_ION := true
 TARGET_USES_GRALLOC1 := true
