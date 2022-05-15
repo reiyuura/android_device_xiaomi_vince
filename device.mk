@@ -203,10 +203,13 @@ PRODUCT_PACKAGES += \
     memtrack.msm8953 \
     libdisplayconfig \
     libdisplayconfig.qti \
+    libgralloc.qti \
     libqdMetaData \
     libvulkan \
     vendor.display.config@1.0.vendor \
-    vendor.display.config@2.0
+    vendor.display.config@2.0 \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.mapper@2.0.vendor
 
 # Dex preopt
 ifeq ($(WITH_GAPPS),true)
