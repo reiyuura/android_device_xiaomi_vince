@@ -209,11 +209,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0
 
 # Dex preopt
-ifeq ($(WITH_GAPPS),true)
-PRODUCT_DEXPREOPT_SPEED_APPS += NexusLauncherRelease
-else
-PRODUCT_DEXPREOPT_SPEED_APPS += Launcher3QuickStep
-endif
 PRODUCT_DEXPREOPT_SPEED_APPS += Settings
 
 # DRM
