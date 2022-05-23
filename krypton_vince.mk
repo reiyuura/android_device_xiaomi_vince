@@ -38,6 +38,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/aosp_excluded_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/aosp_excluded_hardware.xml
 
 # Krypton Apps
+TARGET_BUILD_MATLOG := false
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
 TARGET_BUILD_VIA_BROWSER := false
 
 # Device identifier. This must come after all inclusions
