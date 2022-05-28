@@ -42,6 +42,9 @@ TARGET_BUILD_MATLOG := false
 TARGET_BUILD_GRAPHENEOS_CAMERA := false
 TARGET_BUILD_VIA_BROWSER := false
 
+# Lawnchair
+TARGET_BUILD_LAWNCHAIR := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
 PRODUCT_NAME := krypton_vince
