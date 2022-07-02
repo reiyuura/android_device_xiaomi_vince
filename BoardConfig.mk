@@ -60,7 +60,7 @@ TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CONFIG := vince-perf_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-cosmic
-TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
