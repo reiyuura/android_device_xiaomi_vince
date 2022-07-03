@@ -33,11 +33,8 @@ $(call inherit-product, vendor/xdroid/config/common.mk)
 # Include xdroidOS specific sepolicy
 -include device/xdroid/sepolicy/qcom/sepolicy.mk
 
-# Bootanimation Resolution
-TARGET_BOOT_ANIMATION_RES := 720
-
 # Inherit some common xdroidsp stuff.
-XDROID_BOOT := 1080
+XDROID_BOOT := 720
 XDROID_MAINTAINER := Reiyuura
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_STOCK_ARCORE := false
